@@ -1,0 +1,102 @@
+html, body {
+    margin: 0 auto;
+    color: white;
+    background-color: black;
+}
+
+nav {
+    background-color: black;
+    padding: 30px;
+}
+
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+    margin-top: -23px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(34, 209, 34);
+}
+
+li router-link {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li router-link:hover {
+    background-color: rgb(34, 209, 34);
+}
+
+header {
+    font-size: 30px;
+    display: grid;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: 'Days One', sans-serif;
+}
+
+figure {
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+figcaption {
+    font-size: 30px;
+}
+
+figure img{
+    max-width: 100%;
+}
+
+img {
+    border:1px solid rgb(34, 209, 34);
+}
+
+.video {
+    text-align: center;
+}
+
+main {
+    display: grid;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+    justify-content: center;
+    border: rgb(34, 209, 34) 3px solid;
+    padding: 10px;
+    background-color:black;
+}
+
+footer {
+    padding: 5px;
+    bottom: 0;
+    position: relative;
+    margin-top: 50px;
+
+    background-color: rgb(34, 209, 34);
+}

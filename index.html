@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Game News</title>
+
+        <link rel="stylesheet" type="text/css" href="style/main.css" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="style/print.css" media="print"/>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+        <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
+        <script src="pages/home.js"></script>
+        <script src="pages/about.js"></script>
+        <script src="pages/featured.js"></script>
+        <script src="pages/reviews.js"></script>
+        <script src="pages/guides.js"></script>
+        <script src="pages/signup.js"></script>
+
+        <script type='module'>
+            const router = new VueRouter({
+                mode: 'history',
+                routes: [
+                    { path: '*', redirect: '/'},
+                    { path: '/', component: Home },
+                    { path: '/about', component: About },
+                    { path: '/featured', component: Featured },
+                    { path: '/reviews', component: Reviews },
+                    { path: '/guides', component: Guides },
+                    { path: '/signup', component: SignUp }
+                ]
+            })
+
+            new Vue({ 
+                router,
+                el: '#app',
+                components:{}
+            })
+        </script>
+    </head>
+    <body>
+        <div id="app">
+            <div class="nav-container">
+                <nav class="navbar">
+                    <ol>
+                        <li class="nav"><router-link to="/">Home</router-link></li>
+                        <li class="nav"><router-link to="/featured">Featured</router-link></li>
+                        <li class="nav"><router-link to="/reviews">Reviews</router-link></li>
+                        <li class="nav"><router-link to="/guides">Guides</router-link></li>
+                        <li class="nav"><router-link to="/about">About Us</router-link></li>
+                        <li class="nav" style="float:right"><router-link to="/signup">Signup</router-link></li>
+                    </ol>
+                </nav>
+            </div>
+            <router-view></router-view>
+            <footer class="bottom">
+                <p>© Game News</p>
+            </footer>
+        </div>
+    </body>
+</html>
