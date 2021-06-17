@@ -23,7 +23,7 @@ var Home = {
             <figure class="photo">
                 <figcaption>The Latest Game News</figcaption>
                 <a href="skyrim.html">
-                    <img src="./images/skyrim.jpg" alt="Photo of Skyrim title card" />
+                    <img src="/images/skyrim.jpg" alt="Photo of Skyrim title card" />
                 </a>
             </figure>
 
@@ -43,7 +43,7 @@ var Home = {
             <figure class="photo">
                 <figcaption>More Featured Here</figcaption>
                 <a href="featured.html">
-                    <img src="./images/pexels-john-petalcurin-4317157.jpg" alt="Photo by John Petalcurin from Pexels" />
+                    <img src="/images/pexels-john-petalcurin-4317157.jpg" alt="Photo by John Petalcurin from Pexels" />
                 </a>
             </figure>
         </div>
