@@ -7,16 +7,16 @@ var Reviews = {
 
             <figure class="photo-link">
                 <figcaption>Skyrim Game Review</figcaption>
-                <a href="skyrim.html">
+                <router-link to="/skyrim">
                     <img src="./images/skyrim.jpg" alt="Photo of Skyrim title card">
-                </a>
+                </router-link>
             </figure>
 
             <figure class="photo-link">
                 <figcaption>Dead by Daylight Game Review</figcaption>
-                <a href="dbd.html">
+                <router-link to="/dbd">
                     <img src="./images/dbd.jpg" alt="Photo of Dead by Daylight title card">
-                </a>
+                </router-link>
             </figure>
         </div>
     `

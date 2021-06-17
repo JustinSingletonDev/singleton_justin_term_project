@@ -44,6 +44,10 @@ li router-link:hover {
     background-color: rgb(34, 209, 34);
 }
 
+.container {
+    text-align: center;
+}
+
 header {
     font-size: 30px;
     display: grid;
@@ -99,4 +103,11 @@ footer {
     margin-top: 50px;
 
     background-color: rgb(34, 209, 34);
+}
+
+.error {
+    background-color: red;
+    color: black;
+    margin-left: 25%;
+    margin-right: 25%;
 }

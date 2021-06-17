@@ -18,6 +18,10 @@
         <script src="pages/reviews.js"></script>
         <script src="pages/guides.js"></script>
         <script src="pages/signup.js"></script>
+        <script src="pages/skyrim.js"></script>
+        <script src="pages/dbd.js"></script>
+        <script src="pages/kingdomh.js"></script>
+        <script src="pages/re8.js"></script>
 
         <script type='module'>
             const router = new VueRouter({
@@ -29,7 +33,11 @@
                     { path: '/featured', component: Featured },
                     { path: '/reviews', component: Reviews },
                     { path: '/guides', component: Guides },
-                    { path: '/signup', component: SignUp }
+                    { path: '/signup', component: SignUp },
+                    { path: '/skyrim', component: Skyrim },
+                    { path: '/dbd', component: DBD },
+                    { path: '/kingdomh', component: KingdomH },
+                    { path: '/re8', component: RE8 }
                 ]
             })
 
@@ -50,7 +58,7 @@
                         <li class="nav"><router-link to="/reviews">Reviews</router-link></li>
                         <li class="nav"><router-link to="/guides">Guides</router-link></li>
                         <li class="nav"><router-link to="/about">About Us</router-link></li>
-                        <li class="nav" style="float:right"><router-link to="/signup">Signup</router-link></li>
+                        <li class="nav" style="float:right"><router-link to="/signup" id="nameDisplay">Signup</router-link></li>
                     </ol>
                 </nav>
             </div>
