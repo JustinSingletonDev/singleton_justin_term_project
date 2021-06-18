@@ -4,44 +4,41 @@ html, body {
     background-color: black;
 }
 
-nav {
+body {
+    margin-bottom: 100px;
+}
+
+.nav-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: black;
-    padding: 30px;
+    overflow: hidden;
+}
+
+.nav-container a, #nameDisplay {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav-container a:hover {
+    background-color: rgb(34, 209, 34);
+    color: black;
+}
+
+.nav-container .icon {
+    display: none;
 }
 
 ol {
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-
-li {
-    float: left;
-    margin-top: -23px;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: rgb(34, 209, 34);
-}
-
-li router-link {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li router-link:hover {
-    background-color: rgb(34, 209, 34);
 }
 
 .container {
@@ -97,11 +94,14 @@ main {
 }
 
 footer {
-    padding: 5px;
-    bottom: 0;
-    position: relative;
-    margin-top: 50px;
-
+    position: fixed;
+    height: 50px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    color: black;
+    padding-left: 10px;
     background-color: rgb(34, 209, 34);
 }
 
@@ -110,4 +110,26 @@ footer {
     color: black;
     margin-left: 25%;
     margin-right: 25%;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-container a:not(:first-child) {display: none;}
+    .nav-container a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav-container.responsive {position: relative;}
+    .nav-container.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .nav-container.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
 }

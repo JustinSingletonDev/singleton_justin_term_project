@@ -5,7 +5,7 @@ var SignUp = {
                 <h1 class="top-link">Sign up</h1>
             </header>
 
-            <form name="nameForm" onsubmit="return loadName()" method="POST">
+            <form name="nameForm" method="POST" v-on:submit.prevent>
                 <label>Name</label><br />
                 <input type="text" name="name" id="name" minlength="2" pattern="[A-Za-z]+" required>
                 
@@ -55,7 +55,7 @@ function validateForm() {
         txt3 = "Name is required";
     } if(document.getElementById("email").validity.tooShort) {
         txt4 = "E-mail is too short";
-    } if(validateEmail(document.getElementById("email")) === false) {
+    } if(validateEmail(document.getElementById("email").value) === false) {
         txt5 = "Must be a valid E-mail address";
     } if(document.getElementById("email").validity.valueMissing) {
         txt6 = "E-mail is required";
@@ -67,17 +67,20 @@ function validateForm() {
     document.getElementById("email-pattern").innerHTML = txt5;
     document.getElementById("email-missing").innerHTML = txt6;
 
+    if (txt1 !== txt2 ||
+        txt1 !== txt3 ||
+        txt1 !== txt4 ||
+        txt1 !== txt5 ||
+        txt1 !== txt6) {
+            return false
+        } else {
+            submitThis();
+        }
 }
 
-window.onload = function() {
-    const element = document.getElementById('nameDisplay').innerHTML;
-    console.log(element);
-}
-
-function loadName() {
-    if (element) {
-        router.push({ path: '/' });
-    } else {
-        alert("NOPE");
-    }
+function submitThis() {
+    var newName = document.getElementById("name").value;
+        document.getElementById("nameDisplay").innerHTML = newName;
+        console.log(newName);
+        window.history.back();
 }
