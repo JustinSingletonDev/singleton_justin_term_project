@@ -5,7 +5,7 @@ var SignUp = {
                 <h1 class="top-link">Sign up</h1>
             </header>
 
-            <form name="nameForm" method="POST" v-on:submit.prevent>
+            <form name="nameForm" method="POST" v-on:submit.prevent class="form">
                 <label>Name</label><br />
                 <input type="text" name="name" id="name" minlength="2" pattern="[A-Za-z]+" required>
                 

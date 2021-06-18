@@ -82,6 +82,12 @@ img {
     text-align: center;
 }
 
+.signature {
+    margin-left: 25%;
+    margin-bottom: -3%;
+    text-align: left;
+}
+
 main {
     display: grid;
     margin-top: 50px;
@@ -108,6 +114,16 @@ footer {
     color: black;
     padding: 1px;
     background-color: rgb(34, 209, 34);
+}
+
+table {
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+table, td {
+    border: 1px solid white;
 }
 
 .error {
