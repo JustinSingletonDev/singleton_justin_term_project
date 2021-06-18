@@ -23,7 +23,7 @@ var Home = {
             <figure class="photo">
                 <figcaption>The Latest Game News</figcaption>
                 <router-link to="/skyrim">
-                    <img src="/images/skyrim.jpg" alt="Photo of Skyrim title card" />
+                    <img src="images/skyrim.jpg" alt="Photo of Skyrim title card" />
                 </router-link>
             </figure>
 
@@ -43,7 +43,7 @@ var Home = {
             <figure class="photo">
                 <figcaption>More Featured Here</figcaption>
                 <router-link to="/featured">
-                    <img src="/images/pexels-john-petalcurin-4317157.jpg" alt="Photo by John Petalcurin from Pexels" />
+                    <img src="images/pexels-john-petalcurin-4317157.jpg" alt="Photo by John Petalcurin from Pexels" />
                 </router-link>
             </figure>
         </div>
