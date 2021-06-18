@@ -6,7 +6,7 @@ var KingdomH = {
             </header>
 
             <figure class="photo">
-                <img src="./images/kingdomh.jpg" alt="Kingdom Hearts title card">
+                <img src="https://github.com/JustinSingletonDev/singleton_justin_term_project/blob/main/images/kingdomh.jpg?raw=true" alt="Kingdom Hearts title card">
             </figure>
 
             <main class="content">

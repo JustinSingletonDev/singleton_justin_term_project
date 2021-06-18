@@ -6,7 +6,7 @@ var About = {
             </header>
             
             <figure class="photo">
-                <img src="./images/me.jpg" alt="A photo of myself Justin Singleton" style="max-height: 500px;">
+                <img src="https://github.com/JustinSingletonDev/singleton_justin_term_project/blob/main/images/me.jpg?raw=true" alt="A photo of myself Justin Singleton" style="max-height: 500px;">
                 <figcaption>Justin Singleton the creator of Game News</figcaption>
             </figure>
 

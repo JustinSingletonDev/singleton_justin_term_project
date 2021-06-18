@@ -6,7 +6,7 @@ var RE8 = {
             </header>
 
             <figure class="photo">
-                <img src="./images/re8.jpg" alt="Resident Evil 8 title card">
+                <img src="https://github.com/JustinSingletonDev/singleton_justin_term_project/blob/main/images/re8.jpg?raw=true" alt="Resident Evil 8 title card">
             </figure>
 
             <main class="content">

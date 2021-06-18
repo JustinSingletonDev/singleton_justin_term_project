@@ -6,7 +6,7 @@ var DBD = {
             </header>
 
             <figure class="photo">
-                <img src="./images/dbd.jpg" alt="Dead by Daylight title card">
+                <img src="https://github.com/JustinSingletonDev/singleton_justin_term_project/blob/main/images/dbd.jpg?raw=true" alt="Dead by Daylight title card">
             </figure>
 
             <main class="content">
