@@ -9,7 +9,7 @@ var Home = {
                 <article>
                     <h2>Welcome to the best game news website on the internet!</h2>
 
-                    <p>Within this site you will find reviews for popular video games. 
+                    <p><div class="a">Within this site you will find reviews for popular video games. 
                         You will find links to guides and play-throughs, as well as 
                         written guides. You can also find out more about Game News in 
                         our About section. If you like this type of content and would 
@@ -23,7 +23,7 @@ var Home = {
             <figure class="photo">
                 <figcaption>The Latest Game News</figcaption>
                 <router-link to="/skyrim">
-                    <img src="images/skyrim.jpg" alt="Photo of Skyrim title card" />
+                    <img src="https://github.com/JustinSingletonDev/singleton_justin_term_project/blob/main/images/skyrim.jpg" alt="Photo of Skyrim title card" />
                 </router-link>
             </figure>
 

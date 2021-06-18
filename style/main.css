@@ -48,11 +48,12 @@ ol {
 header {
     font-size: 30px;
     display: grid;
+    text-align: left;
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 20%;
     margin-right: 20%;
-    font-family: 'Days One', sans-serif;
+    font-family: 'Press Start 2P', cursive;
 }
 
 figure {
@@ -93,6 +94,10 @@ main {
     background-color:black;
 }
 
+div.a {
+    text-indent: 50px;
+}
+
 footer {
     position: fixed;
     height: 50px;
@@ -101,7 +106,7 @@ footer {
     right: 0px;
     margin-bottom: 0px;
     color: black;
-    padding-left: 10px;
+    padding: 1px;
     background-color: rgb(34, 209, 34);
 }
 
@@ -117,6 +122,12 @@ footer {
     .nav-container a.icon {
         float: right;
         display: block;
+    }
+    footer {
+        position: relative;
+    }
+    body {
+        margin-bottom: 0;
     }
 }
 
